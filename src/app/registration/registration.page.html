@@ -1,9 +1,73 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>registration</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="auth-form" color="primary" *ngFor="let data of datas">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <h1>{{ data.titleApp}}</h1>
+        <ion-col class="ion-text-start">
+        <h2>{{ data.titleUser }}</h2>
 
-<ion-content>
+        <ion-item style="border-radius: 10px;">
+          <ion-input type="text" placeholder="{{ data.labelNombre}}"></ion-input>
+        </ion-item>
+        
+        <h2>{{ data.titleLastName }}</h2>
 
+        <ion-item style="border-radius: 10px;">
+          <ion-input type="text" placeholder="{{ data.labelLast}}"></ion-input>
+        </ion-item>
+
+        <ion-col class="d-flex flex-row">
+        <h2>{{ data.tittleEdad }}</h2>
+        <ion-item style="border-radius: 10px;">
+          <ion-input type="text" placeholder="{{ data.edad}}"></ion-input>
+          <ion-select value="5">
+            <ion-select-option value="1">1</ion-select-option>
+            <ion-select-option value="2">2</ion-select-option>
+            <ion-select-option value="3">3</ion-select-option>
+            <ion-select-option value="4">4</ion-select-option>
+            <ion-select-option value="5">5</ion-select-option>
+            <ion-select-option value="6">6</ion-select-option>
+            <ion-select-option value="7">7</ion-select-option>
+            <ion-select-option value="8">8</ion-select-option>
+            <ion-select-option value="9">9</ion-select-option>
+            <ion-select-option value="10">10</ion-select-option>
+            
+          </ion-select>
+        </ion-item>
+      
+        <h2>{{ data.tittleGene }}</h2>
+        <ion-item style="border-radius: 10px;">
+          <ion-input type="text" placeholder="{{ data.genero}}"></ion-input>
+          <ion-select interface="popover">
+            <ion-select-option value="nes">Niño</ion-select-option>
+            <ion-select-option value="n64">Niña</ion-select-option>
+          
+          </ion-select>
+        </ion-item>
+      </ion-col>
+
+      <h2>{{ data.nombreNi }}</h2>
+
+        <ion-item style="border-radius: 10px;">
+          <ion-input type="text" placeholder="{{ data.labelNombre}}"></ion-input>
+        </ion-item>
+
+        <h2>{{ data.titleUserParental }}</h2>
+
+        <ion-item style="border-radius: 10px;">
+          <ion-input type="email" placeholder="{{ data.labelEmail}}"></ion-input>
+        </ion-item>
+
+        <h2>{{ data.titlePass }}</h2>
+
+        <ion-item style="border-radius: 10px;">
+          <ion-input type="password" placeholder="{{ data.labelPass }}"></ion-input>
+        </ion-item>
+
+        <ion-button [routerLink]="['/login']" expand="block" color="secondary"> {{ data.labelLogin }}</ion-button>
+        
+      </ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
