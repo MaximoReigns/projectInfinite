@@ -16,30 +16,6 @@ export class Tab1Page {
       namePhase: "Prelinguistica",
       progress: "18%"
     },
-    {
-      image: "../../assets/static/dashboard-1.jpeg",
-      numberPhase: "1",
-      namePhase: "Prelinguistica",
-      progress: "18%"
-    },
-    {
-      image: "../../assets/static/dashboard-1.jpeg",
-      numberPhase: "1",
-      namePhase: "Prelinguistica",
-      progress: "18%"
-    },
-    {
-      image: "../../assets/static/dashboard-1.jpeg",
-      numberPhase: "1",
-      namePhase: "Prelinguistica",
-      progress: "18%"
-    },
-    {
-      image: "../../assets/static/dashboard-1.jpeg",
-      numberPhase: "1",
-      namePhase: "Prelinguistica",
-      progress: "18%"
-    },
   ]
 
 }
