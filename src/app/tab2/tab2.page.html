@@ -1,17 +1,25 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" color="primary">
+  <h1 class="ion-text-center" style="border-bottom: 1px solid white;"><strong>Perfil</strong></h1>
+    <img class="ion-text-center" src="../../assets/static/119207018_1603274373183881_9213762058164269655_o.jpg" alt="image profile" />
+      <ion-grid class="container">
+        <ion-row>
+          <ion-col>
+            <h2>Nombre del Tutor:</h2>
+            <ion-item style="border-radius: 10px;">
+              <ion-input class="input" type="text" name="inputname" value="Manuel Sánchez" disabled></ion-input>
+            </ion-item>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+            <h2>Nombre del hijo:</h2>
+            <ion-item style="border-radius: 10px;">
+              <ion-input class="input" type="text" name="inputname" value="Máximo Sánchez" disabled></ion-input>
+            </ion-item>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+            <h2>Correo Electrónico:</h2>
+            <ion-item style="border-radius: 10px;">
+              <ion-input class="input" type="email" name="inputname" value="manuelsanchez@gmail.com" disabled></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 </ion-content>
+
