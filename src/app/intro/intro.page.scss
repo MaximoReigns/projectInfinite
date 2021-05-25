@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+ion-slides {
+  background-color: white;
+  height: 100%;
+  max-width: 800px;
+}
+
+.swiper-slide {
+  background-image: url(../../assets/static/background-confetti.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin-bottom: 64px;
+  background-color: white;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "Balsamiq Sans", cursive;
+  color: orange;
+  font-weight: bold;
+  margin-top: -75px;
+}
+
+p {
+  font-family: "Balsamiq Sans", cursive;
+  color: cadetblue;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.arcoiris {
+  width: 120px;
+}
+
+.arcoiris-2 {
+  width: 120px;
+}
+
+.flechas {
+  display: block;
+  margin: auto;
+  width: 200px;
+}
