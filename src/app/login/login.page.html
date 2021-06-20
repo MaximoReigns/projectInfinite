@@ -1,9 +1,12 @@
+<!--LOGIN-->
+
 <ion-content class="auth-form" color="primary" *ngFor="let data of datas">
   <ion-grid>
     <ion-row>
       <ion-col class="ion-text-center">
-        <h1>{{ data.titleApp}}</h1>
-        <img style="border-radius: 10px;" src="{{data.image}}"/>
+        <figure>
+          <img src="{{ data.imgApp }}" alt="Logo Peques">
+        </figure>
         
         <h2>{{ data.titleUser }}</h2>
 
@@ -16,9 +19,17 @@
         <ion-item style="border-radius: 10px;">
           <ion-input type="password" placeholder="{{ data.labelPass }}"></ion-input>
         </ion-item>
-        <ion-button [routerLink]="['/']" expand="block" color="secondary"> {{ data.labelLogin }}</ion-button>
+        <ion-button [routerLink]="['/tabs']" expand="block" color="secondary"> {{ data.labelLogin }}</ion-button>
         <h6>{{ data.noAccount }} <ion-label [routerLink]="['/registration']"><u>{{ data.link }}</u></ion-label></h6>
       </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
+
+        <!--->
+        <form [formGroup]="loginForm" (ngSubmit)="loginUser(loginForm.value)">
+          <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input formControlName="email"></ion-input>
+          </ion-item>
+        </form> <!---->
